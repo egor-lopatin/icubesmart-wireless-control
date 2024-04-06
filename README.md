@@ -1,10 +1,10 @@
-# iCubeSmart controlled by ESP8266
+# iCubeSmart Led Cube controlled with ESP8266
 
-This project is designed to control the iCubeSmart 8x8x8 LED Cube using an ESP8266.
+This project is designed to control iCubeSmart controlled by ESP8266 with an ESP8266 board.
 
 ## Hardware
 
-- iCubeSmart 3D8S 8x8x8 LED Cube: https://icubesmart.com/products/icubesmart-8x8x8-3d-led-cube-kit-diy-electronic-kits-teenagers-learning-soldering-project-kit-with-3d-editing-software-3d8p-?sku=18059416730476772687223687
+- iCubeSmart 3D8S Led Cube: https://icubesmart.com/products/icubesmart-3d-led-cube-8x8x8-diy-kit-teenagers-learning-soldering-project-kit-diy-electronic-kits-with-3d-editing-software
 - Wemos D1 Mini ESP8266 board: https://www.wemos.cc/en/latest/d1/d1_mini_3.1.0.html
 
 ## Software
@@ -45,5 +45,5 @@ Here we use the following pins:
 
 ## Configuration
 
-Please use config.h file to customize pins and pass WIFI credentials.
+Please use config.h file to customize pins and pass WI-FI credentials.
 The sample configuration is provided in the `config.h.sample` file.
