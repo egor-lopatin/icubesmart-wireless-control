@@ -83,42 +83,36 @@ void initBoard() {
   RemoteXY.bt_onoff = 1;
 
   digitalWrite(PIN_BT_RESET, LOW);
-  digitalWrite(PIN_BT_START, LOW);
-  digitalWrite(PIN_BT_CYCLE, LOW);
-  digitalWrite(PIN_BT_NEXT, LOW);
-
-  // It's required to start the board with ESP8266 connected to digital pins
-  // Otherwise it freezes on the first scene
-  next();
-  start();
-  cycle();
+  digitalWrite(PIN_BT_START, HIGH);
+  digitalWrite(PIN_BT_CYCLE, HIGH);
+  digitalWrite(PIN_BT_NEXT, HIGH);
 }
 
 void start() {
-  digitalWrite(PIN_BT_START, HIGH);
-  RemoteXY_delay(100);
   digitalWrite(PIN_BT_START, LOW);
+  RemoteXY_delay(100);
+  digitalWrite(PIN_BT_START, HIGH);
   RemoteXY_delay(100);
 }
 
 void cycle() {
-  digitalWrite(PIN_BT_CYCLE, HIGH);
-  RemoteXY_delay(100);
   digitalWrite(PIN_BT_CYCLE, LOW);
+  RemoteXY_delay(100);
+  digitalWrite(PIN_BT_CYCLE, HIGH);
   RemoteXY_delay(100);
 }
 
 void next() {
-  digitalWrite(PIN_BT_NEXT, HIGH);
-  RemoteXY_delay(100);
   digitalWrite(PIN_BT_NEXT, LOW);
+  RemoteXY_delay(100);
+  digitalWrite(PIN_BT_NEXT, HIGH);
   RemoteXY_delay(100);
 }
 
 void reset() {
-  digitalWrite(PIN_BT_RESET, HIGH);
-  RemoteXY_delay(100);
   digitalWrite(PIN_BT_RESET, LOW);
+  RemoteXY_delay(100);
+  digitalWrite(PIN_BT_RESET, HIGH);
   RemoteXY_delay(100);
 }
 
